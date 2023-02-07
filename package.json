@@ -1,0 +1,23 @@
+{
+  "name": "digital_service_coalition",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kindsys/digital_service_coalition.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kindsys/digital_service_coalition/issues"
+  },
+  "homepage": "https://github.com/kindsys/digital_service_coalition#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}
