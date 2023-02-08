@@ -9,3 +9,17 @@ media_folder: "src/assets/images"
 public_folder: "/assets/images"
 
 collections:
+    - label: "Home Page" # Used in the UI
+      name: "home" # Used in routes, e.g., /admin/collections/home
+      folder: "src/pages/home" # The path to the folder where the documents are stored
+      create: true # Allow users to create new documents in this collection
+      slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+      fields: # The fields for each document, usually in front matter
+        - label: "Hero Left"
+          name: "LeftHero"
+          widget: "object"
+          collapsed: true
+          fields:
+            - { label: "Hero Image", name: "parallaxHeroImg", widget: "image", required: false }
+            - { label: "Title", name: "title", widget: "string", required: false }
+            - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
